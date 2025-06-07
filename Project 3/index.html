@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light-mode">
+  <div class="controls">
+    <label>
+      <input type="checkbox" id="themeSwitcher" />
+      Dark/Light Modes
+    </label>
+
+    <label>
+      <input type="checkbox" id="hourFormatSwitcher" />
+      24-Hour Format
+    </label>
+  </div>
+
+  <div class="clock-container" role="timer" aria-live="polite" aria-atomic="true">
+    <div id="clock">00:00:00 AM</div>
+    <div id="date"></div>
+  </div>
+
+  <audio id="tickSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+  <footer class="footer">
+  By Zohil Rahimzai 2025
+</footer>
+
+</html>

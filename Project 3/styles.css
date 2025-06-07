@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.clock-container {
+  text-align: center;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+}
+
+#clock {
+  font-size: 5rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+#date {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark-mode .clock-container {
+  background: rgba(30, 30, 30, 0.85);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode #date {
+  color: #aaa;
+}
+
+.controls label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666;
+  transition: color 0.3s;
+}
+
+body.dark-mode .footer {
+  color: #aaa;
+}
